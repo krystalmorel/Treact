@@ -960,6 +960,10 @@ footer {
         align-items: center;
     }
 
+    .header__img--wrapper {
+        padding-left: 15px;
+    }
+
     .section__title {
         font-size: 48px;
     }
@@ -972,6 +976,11 @@ footer {
         justify-content: center;
     }
 
+    .feature {
+        width: auto;
+        max-width: 384px;
+    }
+
 
     h2 {
         font-size: 26px;
@@ -979,11 +988,20 @@ footer {
 
     button {
         font-size: 18px;
+        align-items: center;
     }
 
     .plans {
         flex-direction: column;
         align-items: center;
+    }
+
+    .nav__links {
+        display: none;
+    }
+
+    .btn__menu {
+        display: block;
     }
 }
 
@@ -992,15 +1010,69 @@ footer {
 
 
 @media (max-width: 550px) {
-    .nav__links {
-        display: none;
+
+    .header__img {
+        max-width: 512;
     }
 
-    .btn__menu {
-        display: block;
+    .header__description {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
+    .header__email {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header__email--input {
+        position: static;
+        padding: 16px 0;
+        padding-left: 32px;
+        line-height: 1.5;
+    }
+
+    .header__email--btn {
+        width: 100%;
+        padding: 16px 0;
+        margin: 16px 0;
+        margin-bottom: 0px;
+        line-height: 1.5;
+    }
+
+
+    .section__title {
+        font-size: 36px;
+    }
+
+    .section__para {
+        font-size: 12px;
+
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    .values__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #start .row {
+        width: 100%;
+        align-items: center;
+    }
+
+    .quality__img {
+        padding-left: 15px;
+    }
+
 
     .features {
-        width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
 }
